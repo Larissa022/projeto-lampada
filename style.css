@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    flex-direction:column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header, main {
+    text-align: center;
+    margin: 10px;
+}
+
+#lamp {
+    transition: transform 0.5s ease-in-out;
+    width: 250px;
+}
+
+button {
+    width: 80px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+#turnOn:hover, #turnOff:hover {
+    background-color: #ddd;
+}
+
+.lampOn {
+    transform: rotate(15deg);
+}
+
+.lampOff {
+    transform: rotate(0deg);
+}
